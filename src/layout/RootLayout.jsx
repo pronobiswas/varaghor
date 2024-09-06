@@ -1,10 +1,15 @@
 import React from 'react'
+import NavBar from './NavBar'
+import Footer from './Footer'
+import { Outlet } from 'react-router-dom'
 
 const RootLayout = () => {
   return (
-    <div>
-      <h1>root rayout</h1>
-    </div>
+    <>
+      <NavBar/>
+        <Outlet/>
+      <Footer/>
+    </>
   )
 }
 
